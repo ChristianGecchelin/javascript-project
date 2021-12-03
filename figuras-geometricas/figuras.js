@@ -40,3 +40,48 @@ const superficieCirculo = radio ** 2 * pi;
 console.log(`La superficie del circulo es: ${superficieCirculo} cm^2`);
 
 console.groupEnd();
+
+function calcularAreaTriangulo() {
+  const inputLado1 = document.getElementById("inputLado1");
+  const valueLado1 = Number(inputLado1.value);
+  const inputLado2 = document.getElementById("inputLado1");
+  const valueLado2 = Number(inputLado2.value);
+  const alturaTriangulo = Math.sqrt(
+    ladoTriangulo1 ** 2 - (baseTriangulo / 2) ** 2
+  );
+}
+
+function altura(lado1, lado2, lado3) {
+  let ladosIguales;
+  let ladoBase;
+  let altura;
+
+  if (
+    lado1 + lado2 <= lado3 ||
+    lado1 + lado3 <= lado2 ||
+    lado2 + lado3 <= lado1
+  ) {
+    alert("Tu triangulo no existe");
+  } else {
+    switch (true) {
+      case ladoA === ladoB:
+        ladosIguales = ladoA;
+        ladoBase = ladoC;
+        break;
+      case ladoA === ladoC:
+        ladosIguales = ladoA;
+        ladoBase = ladoB;
+        break;
+      case ladoC === ladoB:
+        ladosIguales = ladoB;
+        ladoBase = ladoA;
+        break;
+    }
+    if (!ladosIguales) {
+      alert("Tu triangulo no es isosceles, ingresa la altura");
+    } else {
+      altura = Math.sqrt(ladosIguales ** 2 - ladoBase ** 2);
+    }
+  }
+  return altura;
+}
