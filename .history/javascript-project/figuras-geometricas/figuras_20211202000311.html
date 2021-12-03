@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Figuras geométricas | Proyecto 1</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inter:wght@300;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header--title-container">
+        <h1>Figuras geométricas</h1>
+        <p>Calcularemos muchas figuras geométricas !</p>
+      </div>
+    </header>
+    <main>
+      <section class="main-calculadora-contenedor">
+        <h2 class="main-calculadora-contenedor--title">
+          Geometría de un cuadrado
+        </h2>
+        <div class="main-calculadora-form-contenedor">
+          <form action="">
+            <label class="form--label-input" for=""
+              >Escribe cuanto mide cada lado del cuadrado:</label
+            >
+            <input class="form--input" type="number" id="inputCuadrado" />
+            <button
+              class="form--input-boton"
+              type="button"
+              onclick="calcularPerimetroCuadrado()"
+            >
+              Calcula el perímetro !
+            </button>
+            <button
+              class="form--input-boton"
+              type="button"
+              onclick="calcularAreaCuadrado()"
+            >
+              Calcula el área !
+            </button>
+            <!-- type button, para quitarle el submit por defecto y que no me redireccione a ningun lado -->
+          </form>
+        </div>
+      </section>
+      <section class="main-calculadora-contenedor">
+        <h2 class="main-calculadora-contenedor--title">
+          Geometría de un triangulo
+        </h2>
+        <div class="main-calculadora-form-contenedor">
+          <form action="">
+            <label for="">Escribe cuanto mide el primer lado:</label>
+            <input type="number" id="inputLado1" />
+            <label for="">Escribe cuanto mide el segundo lado:</label>
+            <input type="number" id="inputLado2" />
+            <label for="">Escribe cuanto mide la base:</label>
+            <input type="number" id="inputBase" />
+            <button type="button" onclick="calcularPerimetroTriangulo()">
+              Calcula el perímetro !
+            </button>
+            <button type="button" onclick="calcularAlturaTriangulo()">
+              Calcula la altura !
+            </button>
+            <button type="button" onclick="calcularAreaTriangulo()">
+              Calcula el área !
+            </button>
+            <!-- type button, para quitarle el submit por defecto y que no me redireccione a ningun lado -->
+          </form>
+        </div>
+      </section>
+      <section>
+        <h2>Geometría de un Circulo</h2>
+        <form action="">
+          <label for="">Escribe cuanto mide el radio:</label>
+          <input type="number" id="inputRadio" />
+          <button type="button" onclick="calcularPerimetroCirculo()">
+            Calcula el perímetro !
+          </button>
+          <button type="button" onclick="calcularAreaCirculo()">
+            Calcula el área !
+          </button>
+          <!-- type button, para quitarle el submit por defecto y que no me redireccione a ningun lado -->
+        </form>
+      </section>
+    </main>
+    <script src="./figurasConFunciones.js"></script>
+  </body>
+</html>
