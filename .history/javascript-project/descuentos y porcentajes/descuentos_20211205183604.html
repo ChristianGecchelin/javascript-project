@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Porcentajes y descuentos</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header--title-container">
+        <h1>Calcula el precio descontado !</h1>
+      </div>
+    </header>
+    <main>
+      <section class="title-container">
+        <h2 class="title">
+          Ingresa el precio y luego el coupon que tienes. Nosotros nos
+          encargamos del resto 😉.
+        </h2>
+        <div class="container-form">
+          <form action="">
+            <div class="form--labelContainer">
+              <label class="form--label-input" for="inputPrice">
+                Escribe el precio de tu producto:</label
+              >
+              <input class="form--input" type="number" id="inputPrice" />
+            </div>
+            <div class="form--labelContainer">
+              <label class="form--label-input" for="inputCoupon"
+                >Escribe el descuento a aplicar:</label
+              >
+              <input class="form--input" type="text" id="inputCoupon" />
+            </div>
+
+            <button type="button" onclick="calculateDiscountPrice()">
+              Precio Final
+            </button>
+          </form>
+        </div>
+        <section class="container-answer">
+          <p id="resultFunction"></p>
+        </section>
+      </section>
+    </main>
+
+    <script src="./descuentos.js"></script>
+  </body>
+</html>

@@ -1,0 +1,1 @@
+const precioOriginal = 100;
