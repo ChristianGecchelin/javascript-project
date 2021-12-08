@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculos Estadisticos</title>
+  </head>
+  <body>
+    <header><h1>Calculos Estadísticos</h1></header>
+    <main>
+      <section class="title-container">
+        <h2 class="title">Ingresa los numeros que quieres calcular!</h2>
+        <div class="container-form">
+          <form action="" id="formulario">
+            <div class="form--labelContainer">
+              <label class="form--label-input" for="inputNumber">
+                Ingresa los números uno a uno</label
+              >
+              <input class="form--input" type="number" id="inputNumber" />
+            </div>
+            <!-- <div class="form--labelContainer">
+                <label class="form--label-input" for="inputCoupon"
+                  >Escribe el descuento a aplicar:</label
+                >
+                <input class="form--input" type="text" id="inputCoupon" />
+              </div> -->
+            <label for="">Agrega el número</label>
+            <button id="" type="button" onclick="return agregarElemento()">
+              Agregar
+            </button>
+            <label for="">Muestra los números agregados</label>
+            <button type="button" onclick="mostrarArray()">Mostrar</button>
+            <div class="container-answer">
+              <p id="arrayDeNumeros"></p>
+            </div>
+            <button type="button" onclick="calculateMedia(datos)">
+              <!-- tuve que pasarle datos para que funcionara -->
+              Media Aritmética
+            </button>
+            <button type="button" onclick="calculateMediana(datos)">
+              Mediana
+            </button>
+            <button type="button" onclick="calculateModa(datos)">Moda</button>
+          </form>
+        </div>
+        <section class="container-answer">
+          <p id="resultFunction"></p>
+        </section>
+      </section>
+    </main>
+    <script src="./calculos-estadisticos.js"></script>
+  </body>
+</html>
